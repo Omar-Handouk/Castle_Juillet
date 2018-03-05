@@ -172,4 +172,16 @@ public class Scanner {
 
         return isReady;
     }
+
+    public void close()
+    {
+        try
+        {
+            bufferedReader.close();
+        }
+        catch (IOException error)
+        {
+            error.printStackTrace();
+        }
+    }
 }
