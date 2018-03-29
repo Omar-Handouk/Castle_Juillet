@@ -73,7 +73,8 @@ public class Main {
 
         boolean check() {
             for (int i = 0; i < m; ++i)
-                if (cons[i][2] > 0 && Math.abs(perm[cons[i][0]] - perm[cons[i][1]]) > cons[i][2] || cons[i][2] < 0 && Math.abs(perm[cons[i][0]] - perm[cons[i][1]]) < -cons[i][2])
+                if (cons[i][2] > 0 && Math.abs(perm[cons[i][0]] - perm[cons[i][1]]) > cons[i][2] || 
+                    cons[i][2] < 0 && Math.abs(perm[cons[i][0]] - perm[cons[i][1]]) < -cons[i][2])
                     return false;
             return true;
         }
